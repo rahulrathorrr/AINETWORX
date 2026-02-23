@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Rocket, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
-  // Animation variants for staggered effect
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -20,7 +19,8 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen bg-[#0f1115] flex items-center justify-center pt-20 overflow-hidden relative">
-      {/* Background glowing effects for AI vibe */}
+      
+      {/* Background glowing effects */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pink-600/10 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -31,13 +31,6 @@ const Hero = () => {
           animate="visible"
           className="max-w-4xl mx-auto flex flex-col items-center"
         >
-          {/* Badge */}
-          <motion.div variants={itemVariants} className="mb-8">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/50 border border-gray-700 text-sm font-medium text-gray-300">
-              <Rocket size={16} className="text-[#ec4899]" />
-              🚀 Currently in Early Access - 120+ Businesses Already Onboard
-            </span>
-          </motion.div>
 
           {/* Headline */}
           <motion.h1 
@@ -52,7 +45,7 @@ const Hero = () => {
             variants={itemVariants}
             className="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl leading-relaxed"
           >
-            AINETWORX is an early-stage AI startup from East Delhi. We build affordable, easy-to-use artificial intelligence tools for Indian small and mid-sized businesses - so they can automate the boring stuff, understand their numbers, and grow without burning out.
+            AINETWORX is an early-stage AI startup from East Delhi. We build affordable, easy-to-use artificial intelligence tools for Indian small and mid-sized businesses — so they can automate the boring stuff, understand their numbers, and grow without burning out.
           </motion.p>
 
           {/* CTAs */}
@@ -75,6 +68,7 @@ const Hero = () => {
               <ArrowRight size={18} />
             </Link>
           </motion.div>
+
         </motion.div>
       </div>
     </section>
