@@ -45,7 +45,7 @@ const Hero = () => {
             variants={itemVariants}
             className="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl leading-relaxed"
           >
-            AINETWORX is an early-stage AI startup from East Delhi. We build affordable, easy-to-use artificial intelligence tools for Indian small and mid-sized businesses — so they can automate the boring stuff, understand their numbers, and grow without burning out.
+            AINETWORX is an early-stage AI startup from East Delhi. We build affordable, easy-to-use artificial intelligence tools for Indian small and mid-sized businesses - so they can automate the boring stuff, understand their numbers, and grow without burning out.
           </motion.p>
 
           {/* CTAs */}
