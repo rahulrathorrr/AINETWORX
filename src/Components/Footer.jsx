@@ -127,13 +127,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="pt-8 border-t border-gray-800/60 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 font-medium tracking-wide">
+        <div className="pt-8 border-t border-gray-800/60 flex flex-col md:flex-row justify-center items-center gap-4 text-xs text-gray-500 font-medium tracking-wide text-center">
           <p>&copy; {currentYear} AINETWORX PRIVATE LIMITED. All rights reserved.</p>
-          
-          <div className="flex gap-6">
-             <Link to="/privacy-policy" onClick={scrollToTop} className="hover:text-[#ec4899] transition-colors">Privacy Protocol</Link>
-             <Link to="/terms-conditions" onClick={scrollToTop} className="hover:text-[#ec4899] transition-colors">Terms of Service</Link>
-          </div>
         </div>
         
       </div>
